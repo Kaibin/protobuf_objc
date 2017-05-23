@@ -13,8 +13,8 @@ Protocol Buffers 是一种轻便高效的结构化数据存储格式，可以用
     #!/bin/bash
     SRC_DIR=./src
     DST_DIR=./target
-    PROTOC_DIR=~/Documents/DevTools/protobuf/src
-    $PROTOC_DIR/protoc --proto_path=$SRC_DIR --objc_out=$DST_DIR $SRC_DIR/person.proto
+    PROTOC_DIR=~/Documents/DevTools/protobuf/src #protoc编译器存放的目录
+    $PROTOC_DIR/protoc --proto_path=$SRC_DIR --objc_out=$DST_DIR $SRC_DIR/person.proto
 </code></pre>
 </li>
 <li>最后就可以#import "Person.pbobjc.h"头文件，对生成的Person对象进行Serialization和Unserialization操作</li>
